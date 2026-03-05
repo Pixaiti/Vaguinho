@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Aeroporto Inteligente</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Aeroporto Inteligente</title>
+<link rel="stylesheet" href="teste.css">
 </head>
 <body>
 
-    <div class="painel">
-        <h1>Painel do Voo</h1>
-        
-        <div class="pista">
-            <img id="aviao" src="https://cdn-icons-png.flaticon.com/512/2928/2928998.png" alt="Avião">
-        </div>
-        
-        <div class="info">
-            <p>Código: <span id="codigo">---</span></p>
-            <p>Origem: <span id="origem">---</span></p>
-            <p>Destino: <span id="destino">---</span></p>
-            <p>Horário: <span id="horario">---</span></p>
-            <p class="status">Status: <span id="status">Aguardando</span></p>
-            <hr>
-            <p>🚀 Velocidade: <span id="velocidade">0</span> km/h</p>
-            <p>🛫 Altitude: <span id="altitude">0</span> pés</p>
-            <p>📍 Distância: <span id="distancia">1000</span> km</p>
-        </div>
+<div class="painel">
 
-        <div class="botoes">
-            <button onclick="voo.decolar()">🛫 Decolar</button>
-            <button onclick="voo.pousar()">🛬 Pousar</button>
-        </div>
-    </div>
+<h1>✈️ Aeroporto Inteligente</h1>
 
-    <script src="script.js"></script>
+<select id="tipoVoo">
+<option value="economico">Voo Econômico</option>
+<option value="comercial">Voo Comercial</option>
+<option value="luxo">Jato Executivo (Luxo)</option>
+</select>
+
+<div class="pista">
+<img id="aviao" src="https://m.media-amazon.com/images/M/MV5BZjRjMWFkNmMtMjZkOS00MDQwLWE2ZDYtYjU4NGNhNWE2ZGI4XkEyXkFqcGc@._V1_.jpg">
+</div>
+
+<div class="info">
+
+<p>Tipo de voo: <span id="tipo">---</span></p>
+<p>Velocidade: <span id="velocidade">0</span> km/h</p>
+<p>Altitude: <span id="altitude">0</span> pés</p>
+<p>Conforto: <span id="conforto">---</span></p>
+
+</div>
+
+<div class="botoes">
+
+<button onclick="selecionarVoo()">Selecionar Voo</button>
+<button onclick="decolar()">Decolar</button>
+<button onclick="pousar()">Pousar</button>
+
+</div>
+
+</div>
+
+<script src="teste.js"></script>
 </body>
 </html>
